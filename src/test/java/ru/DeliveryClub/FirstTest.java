@@ -48,10 +48,5 @@ public class FirstTest extends WebDriverSetting {
 
             driver.findElement(By.xpath("//*[@id=\"l_aud\"]")).click();   //музыка
 
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("_input")));
-
-            driver.findElement(By.xpath("//*[@id=\"l_ap\"]")).click();
-
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("apps_after")));
     }
 }
