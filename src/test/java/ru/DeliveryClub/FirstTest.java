@@ -23,8 +23,8 @@ public class FirstTest extends WebDriverSetting {
 
         //  WebDriverWait wait = new WebDriverWait(driver, 10);
 
-            driver.findElement(By.id("index_email")).sendKeys("faust1393@mail.ru");  // логин
-            driver.findElement(By.id("index_pass")).sendKeys("Fhntv3141592688");    //пасс
+            driver.findElement(By.id("index_email")).sendKeys("");  // логин
+            driver.findElement(By.id("index_pass")).sendKeys("");    //пасс
             driver.findElement(By.id("index_login_button")).click();    // жмет кнопку войти
 
         WebDriverWait wait = new WebDriverWait(driver, 10);
