@@ -14,8 +14,8 @@ public class WebDriverSetting {
         driver = new ChromeDriver();
     }
 
-    //@After
-    //public void close() {
-      //  driver.quit();
-  //  }
+    @After
+    public void close() {
+        driver.quit();
+    }
 }
