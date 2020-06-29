@@ -22,8 +22,9 @@ public class Golos extends WebDriverSetting {
 
         driver.findElement(By.cssSelector("[href=\"http://cosplay-gp.com/auth/redirect/facebook\"]")).click();
 
-        driver.findElement(By.id("email")).sendKeys("faustsk@yandex.ru");  // логин
-        driver.findElement(By.id("pass")).sendKeys("Fhntv3141592688");    //пасс
+        driver.findElement(By.id("email")).sendKeys("*******");  // логин
+        driver.findElement(By.id("pass")).sendKeys("*********");    //пасс если через FB
+       // driver.findElement(By.id("password")).sendKeys("***********"); //пасс если без FB
         driver.findElement(By.id("loginbutton")).click();    // жмет кнопку войти
 
 
@@ -36,7 +37,6 @@ public class Golos extends WebDriverSetting {
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div[1]/main/div/div[2]/div/ul/li[10]/div/div[3]/form/input[2]")));
 
        driver.findElement(By.xpath("/html/body/div[1]/main/div/div[2]/div/ul/li[10]/div/div[3]/form/input[2]")).click();
-
 
         ((JavascriptExecutor)driver).executeScript("scroll(0,400)");
 
